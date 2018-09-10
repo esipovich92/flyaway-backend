@@ -1,4 +1,4 @@
-package com.esipovich.persistence.model;
+package com.esipovich.flyaway.model;
 
 /**
  * @author Artem Esipovich 06.09.2018
