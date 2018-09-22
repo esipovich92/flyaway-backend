@@ -1,14 +1,16 @@
 package com.esipovich.flyaway.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
+import lombok.Getter;
+import lombok.experimental.SuperBuilder;
 
 /**
  * @author Artem Esipovich 06.09.2018
  */
 
 @AllArgsConstructor
-@Builder(builderClassName = "Builder", builderMethodName = "newBuilder")
+@Getter
+@SuperBuilder
 public class Plane {
 
     private String model;

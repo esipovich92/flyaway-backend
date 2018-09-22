@@ -1,14 +1,13 @@
 package com.esipovich.flyaway.dto;
 
-import lombok.Builder;
+import lombok.experimental.SuperBuilder;
 
 /**
  * @author Artem Esipovich 22.09.2018
  */
 
-@Builder
+@SuperBuilder
 public class PlaneDetails {
-    private final Long id;
     private final String model;
     private final int capacity;
     private final int maxDistance;

@@ -25,7 +25,7 @@ public class PlaneService {
     }
 
     public Plane getPlane(final Long planeId) {
-        return Plane.newBuilder()
+        return Plane.builder()
                 .model("Boeing")
                 .capacity(200)
                 .maxDistance(1500)
