@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 /**
  * @author Artem Esipovich 24.09.2018
@@ -22,5 +23,10 @@ public class PlaneController {
     @GetMapping("/{id}")
     public PlaneDetails getOne(@PathVariable Long id) {
         return this.planeService.getPlane(id);
+    }
+
+    @GetMapping
+    public List<PlaneDetails> getAll() {
+        return this.planeService.getAll();
     }
 }

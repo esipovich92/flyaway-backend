@@ -2,7 +2,6 @@ package com.esipovich.flyaway.service;
 
 import com.esipovich.flyaway.dto.PlaneDetails;
 import com.esipovich.flyaway.mapper.PlaneMapper;
-import com.esipovich.flyaway.model.Plane;
 import java.util.Collections;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -30,7 +29,12 @@ public class PlaneService {
         //return this.planeMapper.map(plane);
     }
 
-    public List<Plane> getAll() {
-        return Collections.singletonList(null);
+    public List<PlaneDetails> getAll() {
+        return Collections.singletonList(
+                PlaneDetails.builder()
+                .model("Boeing")
+                .capacity(200)
+                .maxDistance(1500)
+                .build());
     }
 }
