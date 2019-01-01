@@ -16,6 +16,7 @@ public class Plane {
     private String model;
     private int capacity;
     private int maxDistance;
+    private PlaneStatus status = PlaneStatus.READY;
 
     @Override
     public String toString() {
