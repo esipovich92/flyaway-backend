@@ -17,7 +17,6 @@ public class PlaneDetails {
     private final int maxDistance;
 
     @JsonCreator
-
     public PlaneDetails(
             @JsonProperty String model,
             @JsonProperty int capacity,
