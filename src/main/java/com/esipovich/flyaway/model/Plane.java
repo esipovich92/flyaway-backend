@@ -24,9 +24,13 @@ public class Plane {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String model;
+
     private int capacity;
+
     private int maxDistance;
+
     @Enumerated(EnumType.STRING)
     private PlaneStatus status = PlaneStatus.READY;
 

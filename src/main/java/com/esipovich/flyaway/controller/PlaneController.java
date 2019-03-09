@@ -2,12 +2,12 @@ package com.esipovich.flyaway.controller;
 
 import com.esipovich.flyaway.dto.PlaneDetails;
 import com.esipovich.flyaway.service.PlaneService;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.List;
 
 /**
  * @author Artem Esipovich 24.09.2018
