@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class PlaneMapper {
+public class PlaneDetailsMapper {
 
     public PlaneDetails map(Plane plane) {
         return PlaneDetails.builder()

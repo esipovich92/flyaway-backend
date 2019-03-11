@@ -1,7 +1,7 @@
 package com.esipovich.flyaway.service;
 
 import com.esipovich.flyaway.dto.PlaneDetails;
-import com.esipovich.flyaway.mapper.PlaneMapper;
+import com.esipovich.flyaway.mapper.PlaneDetailsMapper;
 import java.util.Collections;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 public class PlaneService {
 
     //private final PlaneRepository planeRepository;
-    private final PlaneMapper planeMapper;
+    private final PlaneDetailsMapper planeDetailsMapper;
 
     public PlaneDetails getPlane(final Long id) {
         //Plane plane = this.planeRepository.findOne(id);
